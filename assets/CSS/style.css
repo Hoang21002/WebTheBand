@@ -12,6 +12,9 @@ html{
     
 }
 
+.clear{
+    clear:both;
+}
 
 #header{
     top: 0px;
@@ -129,8 +132,67 @@ html{
 
 
 #container{
+    margin-right: auto;
+    margin-left: auto;
+    width: 800px;
+    text-align: center;
+    padding: 64px 16px;
+}
+
+.content_heading{
+
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+#container .the_band{
+    font-weight: 300; 
+    margin: 10px 0;
+}
+#container .container_content_slogan{
+    opacity: 0.6;
+    font-style: italic;
+    font-size: 15px;
+    margin: 15px 0;
+}
+#container .container_about_title{
+    font-size: 15px;
+    margin: 15px 0;
+    line-height: 1.4;
+    text-align:justify;
 
 }
+
+#container .content_profile{
+    padding: 32px 0;
+
+
+}
+
+
+#container .content_profile_about{
+    float: left;
+    width: calc(100%/3);
+
+    
+    
+
+
+}
+
+.name_profile{
+    font-size: 15;
+    margin: 15px 0;
+}
+.img_profile{
+    border-radius:10px;
+    width: 155px;
+}
+
+
+
+
 
 
 #footer{
