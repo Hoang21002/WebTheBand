@@ -8,6 +8,9 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.text_white{
+    color: white;
+}
 #main{
     
 }
@@ -190,7 +193,93 @@ html{
     width: 155px;
 }
 
+/* Tour */
+#tour_tickets{
+    left: 0;
+    right: 0;
+    padding: 64px 16px;
+    background: #000;
+}
+.tour_tickets_content{
+    margin-left: auto;
+    margin-right: auto;  
+    width: 800px;
+    
+}
+.tour_heading{
+    font-weight: 300;
+    margin: 10px 0;
+    text-align: center;
+}
+.tour_announce{
+    opacity: 0.6;
+    font-style: italic;
+    margin: 15px 0;
+    text-align: center;
+}
+.tickets_book{
+    
+    background: white;
+}
+.tickets_book .month{
+    padding-left: 18px;
+    color: #757575;
+}
 
+.tickets_book > li{
+    list-style: none;
+    border-bottom: 1px solid #757575 ;
+    padding: 16px 8px;
+}
+.tickets_book .sold_out{
+    color: white;
+    margin-left: 16px;
+    font-size: 15px;
+    padding: 9px 17px;
+    background-color: red;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+.tickets_book .quantity{
+    float: right;
+    background: #000;
+    color: white;
+    padding:5px 10px;
+    border-radius: 50px;
+}
+.tour_place{
+    margin-left: -8px;
+    margin-right: -8px;
+    
+}
+.tour_info_place{
+    padding: 8px;
+    width: calc(100%/3);
+    float: left;
+}
+.tour_info_place img{
+    width: 100%;
+    
+}
+.tour_place_body{
+    
+    margin: 15px 0;
+    background: white;
+
+}
+.body_heading{
+
+}
+.body_date{
+
+}
+.body_desc{
+
+}
+.btn_tickets{
+
+}
 
 
 
