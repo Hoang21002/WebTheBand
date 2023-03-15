@@ -5,7 +5,7 @@
 }
 
 html{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif ;
 }
 
 .text_white{
@@ -105,7 +105,7 @@ html{
 #slider{
     position: relative;
    padding-top: 50%;
-    background: url(/assets/Img/bg.jpg) center /cover no-repeat;
+    background: url(/assets/Img/background_theband.png) center /cover no-repeat;
     margin-top: 46.5px;
 }
 
@@ -144,7 +144,7 @@ html{
 
 .content_heading{
 
-    font-size: 30px;
+    font-size: 60px;
     letter-spacing: 4px;
     text-transform: uppercase;
 }
@@ -153,10 +153,10 @@ html{
     font-weight: 300; 
     margin: 10px 0;
 }
-#container .container_content_slogan{
+#container .container_about_slogan {
     opacity: 0.6;
     font-style: italic;
-    font-size: 15px;
+    font-size: 18px;
     margin: 15px 0;
 }
 #container .container_about_title{
@@ -190,7 +190,7 @@ html{
 }
 .img_profile{
     border-radius:10px;
-    width: 155px;
+    width: 195px;
 }
 
 /* Tour */
@@ -254,31 +254,57 @@ html{
     
 }
 .tour_info_place{
-    padding: 8px;
+    
+    padding: 32px 8px;
     width: calc(100%/3);
     float: left;
 }
 .tour_info_place img{
-    width: 100%;
+    border-radius: 8px;
+    display: block;
+    width: 100%;   
+    transition: all;
+}
+.tour_info_place img:hover,
+.btn_tickets:hover  {
+    cursor: pointer;
+    opacity: 0.6;
+    background-color: #757575;
     
 }
 .tour_place_body{
-    
-    margin: 15px 0;
+    border-radius: 0  0 8px 8px ;
+    padding: 0 16px;
     background: white;
 
 }
 .body_heading{
-
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: 600;
 }
 .body_date{
-
+    color: #757575;
+    padding: 15px 0;
 }
 .body_desc{
-
+    line-height: 1.4;
+    font-size: 15px;
+    text-align:inherit;
+    margin: 15px 0;
+    
 }
-.btn_tickets{
+.btn_tickets{    
+    border-radius: 4px;
+    background: #000;
+    margin-bottom: 15px;
+    padding: 8px;   
+}
 
+.btn_tickets a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
 }
 
 
