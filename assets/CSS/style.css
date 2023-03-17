@@ -11,13 +11,55 @@ html{
 .text_white{
     color: white;
 }
-#main{
-    
+
+.pad_32{
+    padding: 32px 0;
+}
+
+.text_center{
+    text-align: center;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-thir{    
+    width: calc(100%/3);
+}
+
+.col_haf{
+    width: 50%;
+}
+
+.col_full{
+    width: 100%;
 }
 
 .clear{
     clear:both;
 }
+
+
+#main{
+    
+}
+
+
 
 #header{
     top: 0px;
@@ -169,20 +211,8 @@ html{
 
 #container .content_profile{
     padding: 32px 0;
-
-
 }
 
-
-#container .content_profile_about{
-    float: left;
-    width: calc(100%/3);
-
-    
-    
-
-
-}
 
 .name_profile{
     font-size: 15;
@@ -248,16 +278,9 @@ html{
     padding:5px 10px;
     border-radius: 50px;
 }
-.tour_place{
-    margin-left: -8px;
-    margin-right: -8px;
-    
-}
+
 .tour_info_place{
-    
-    padding: 32px 8px;
-    width: calc(100%/3);
-    float: left;
+    padding-top: 32px;
 }
 .tour_info_place img{
     border-radius: 8px;
@@ -307,7 +330,57 @@ html{
     text-decoration: none;
 }
 
+.contact_content{
+    padding: 64px 0;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.contact_heading{
+    margin: 15px 0;
+}
+
+.contact_decs{
+    margin: 10px 0;
+    margin-bottom: 32px;
+}
+
+.contact_title{
+    padding: 32px 0;
+}
+
+.contact_info{
+    font-size: 18px;
+    
+    display: inline-block;
+}
+.contact_info i{
+    display: inline-block;
+    width: 30px;
+}
+
+
+
+.form_control{
+    width: 100%;
+    padding: 8px 16px;
+    margin-bottom: 8px;
+
+}
+.btn_submit{
+    padding: 8px;
+    float: right;
+    background: black;
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.btn_submit:hover{
+    cursor: pointer;
+    background: #757575;
+    border: 1px solid #757575;
+}
 
 
 #footer{
