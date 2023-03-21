@@ -1,0 +1,45 @@
+
+/* pc */
+@media(min-width: 1024px){
+    .header_nav_menu_mobile{
+        display: none;
+    }
+    /* Độ rộng tối đa 800px thì chạy (Nhỏ hơn hoặc bằng 800px thì chạy) */
+}
+
+/* table */
+@media(min-width: 740px) and (max-width: 1023px){
+    .header_nav_menu_mobile{
+        display: none;
+    }
+    /* Độ rộng thiểu 800px thì chạy (Lớn hơn hoặc bằng 800px thì chạy) */
+}
+
+/* mobile */
+@media(max-width: 740px){
+    .header_nav li {
+        position: relative;
+        display: block;
+    }
+    .header_nav_search .header_nav_icon_search{
+        display: none;
+    }
+
+    .col{
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .col-thir {
+        width: auto;
+    }
+
+    .col_haf {
+        width: 100%;
+    }
+
+    .slider_text {
+        display: none;
+    }
+}
