@@ -21,7 +21,10 @@
                 <li><a href="#container">Band</a></li>
                 <li><a href="#tour_tickets">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#footer">More <i class="header_nav_icon_arrow_down ti-angle-down"></i></a>
+                <li><a >
+                    More 
+                    <i class="header_nav_icon_arrow_down ti-angle-down"></i>
+                </a>
                     <ul class="header_subnav">
                         <li><a href="#">Merchandise</a></li>
                         <li><a href="#">Extras</a></li>
@@ -29,15 +32,17 @@
                     </ul>
                 </li>
             </ul>
-            <!-- End header_nav -->
             <div class="header_nav_search">
                 <i class="header_nav_icon_search ti-search"></i>
             </div>
-
+            
             <div id="mobile-menu" class="header_nav_menu_mobile">
                 <i class="header_nav_icon_menu ti-menu"></i>
+                
             </div>
-        
+            
+            <!-- End header_nav -->
+            
         </div>
 
         <div id="slider">
@@ -211,20 +216,20 @@
     </div>
 
     <script>
-        var header = document.getElementById('header')
-        console.log(header)
+        var header = document.getElementById('header');
+        console.log(header);
         
 
-        
         // mobile-menu
-         var mobileMenu = document.getElementById('mobile-menu')
-        console.log(mobileMenu)
+         var mobileMenu = document.getElementById('mobile-menu');
+        console.log(mobileMenu);
 
         var headerHeight = header.clientHeight;
 
+
         mobileMenu.onclick = function(){
             var isClose = header.clientHeight === headerHeight;
-
+            console.log(isClose)
             if(isClose){
                 header.style.height = 'auto';
              } else {
@@ -234,12 +239,28 @@
 
         // Tự đống khi chọn menu
         var menuItems = document.querySelectorAll('.header_nav a[href*="#"]');
-        for(var i=0 ; i < menuItems.length; i++){
+        for(var i=0 ; i < menuItems.length; i++)
+        {
             var menuItem = menuItems[i];
-            menuItem.onclick = function() {
-                header.style.height = null;     
+            
+
+            menuItem.onclick = function(event) 
+            {
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('header_subnav');               
+                console.log(isParentMenu)
+                if (isParentMenu) 
+                {
+                    event.preventDefault();
+                } else 
+                {    
+                    header.style.height = null;     
+                }
             }
         }
+
+        //
+
+        
 
     </script>
 </body>

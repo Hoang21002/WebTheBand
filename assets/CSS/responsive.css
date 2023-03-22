@@ -16,13 +16,25 @@
 }
 
 /* mobile */
-@media(max-width: 740px){
+@media(max-width: 739px){
+    #header{
+        overflow: hidden;
+    }
     .header_nav li {
-        position: relative;
+        /* position: relative; */
         display: block;
     }
     .header_nav_search .header_nav_icon_search{
         display: none;
+    }
+    .header_subnav{
+        position: initial;
+        background: #000;
+        color: white;
+    }
+    .header_subnav a {
+        color: white;
+        padding: 1px 34px;
     }
 
     .col{
